@@ -7,6 +7,6 @@ export default function brainEvenGame() {
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-const question = readlineSync.question('Question: ' + getRandom);
+const question = readlineSync.question('Question: ' + getRandom());
 console.log(question);
 };

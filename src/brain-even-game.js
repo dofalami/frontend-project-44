@@ -15,6 +15,6 @@ export default function brainEvenGame() {
   }
 
   if (randomNumber % 2 === 1 && answer === 'yes') {
-    console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${greeting()}!`);
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${greeting(greeting)}!`);
   }
 };

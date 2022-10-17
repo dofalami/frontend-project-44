@@ -9,11 +9,11 @@ export default function brainEvenGame() {
 
   const answer = readlineSync.question('Your answer: ');
 
-  If ((getRandom() % 2 === 0) && (answer = 'yes'))
+  If (getRandom() % 2 === 0) && (answer = 'yes') {
     return 'Correct!';
-  
+  }
 
-  If ((getRandom() % 2 === 1) && (answer = 'yes'))
+  If (getRandom() % 2 === 1) && (answer = 'yes') {
     return `'yes' is wrong answer ;(. Correct answer was 'no'.Let's try again, ${userName}!`;
-
+  }
 };

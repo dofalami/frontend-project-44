@@ -11,10 +11,10 @@ export default function brainEvenGame() {
   const answer = readlineSync.question('Your answer: ');
 
   if (randomNumber % 2 === 0 && answer === 'yes') {
-    return 'Correct!';
+    console.log('Correct!');
   }
 
   if (randomNumber % 2 === 1 && answer === 'yes') {
-    return `'yes' is wrong answer ;(. Correct answer was 'no'.Let's try again, ${userName}!`;
+    console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.Let's try again, ${userName}!`);
   }
 };

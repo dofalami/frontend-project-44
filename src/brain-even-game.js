@@ -9,18 +9,17 @@ export default function brainEvenGame() {
   console.log(`Hello, ${userName}!`);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-  for (let i = 0; i <= 3;) {
-    let randomNumber = getRandom();
-    console.log('Question: ' + randomNumber);
+  for (let i = 0; i < 3;) {
+    const randomNumber = getRandom();
+    console.log(`Question: ${randomNumber}`);
 
-    let answer = readlineSync.question('Your answer: ');
+    const answer = readlineSync.question('Your answer: ');
 
     if (randomNumber % 2 === 0) {
       if (answer === 'yes') {
         console.log('Correct!');
-        i = i + 1;
-      }
-      else {
+        i += 1;
+      } else {
         console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${userName}!`);
         break;
       }
@@ -29,13 +28,12 @@ export default function brainEvenGame() {
     if (randomNumber % 2 === 1) {
       if (answer === 'no') {
         console.log('Correct!');
-        i = i + 1;
-      }
-      else {
+        i += 1;
+      } else {
         console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${userName}!`);
         break;
       }
     }
-    console.log('Congratulations!');
-  }  
-};
+//    console.log('Congratulations!');
+  }
+}

@@ -6,4 +6,4 @@
 
 1. Brain Even
 
-<script id="asciicast-ruR3z6rP3z2BNDc2EhkB3c0dv" src="https://asciinema.org/a/ruR3z6rP3z2BNDc2EhkB3c0dv.js" async></script>
+<a href="https://asciinema.org/a/ruR3z6rP3z2BNDc2EhkB3c0dv" target="_blank"><img src="https://asciinema.org/a/ruR3z6rP3z2BNDc2EhkB3c0dv.svg" /></a>

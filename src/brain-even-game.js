@@ -34,7 +34,6 @@ export default function brainEvenGame() {
         break;
       }
     }
-//    console.log(`Congratulations, ${userName}!`);
   }
   console.log(`Congratulations, ${userName}!`);
 };

@@ -3,6 +3,7 @@ import readlineSync from 'readline-sync';
 import getRandom from '../src/randomNum.js';
 
 greeting();
+
 export default function brainEvenGame() {
 //  greeting();
 
@@ -16,6 +17,6 @@ export default function brainEvenGame() {
   }
 
   if (randomNumber % 2 === 1 && answer === 'yes') {
-    console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${greeting()}!`);
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${userName}!`);
   }
 };

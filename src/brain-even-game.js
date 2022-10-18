@@ -9,7 +9,8 @@ export default function brainEvenGame() {
   console.log(`Hello, ${userName}!`);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-  for (let i = 0; i < 3;) {
+  let i = 0
+  for (; i < 3;) {
     const randomNumber = getRandom();
     console.log(`Question: ${randomNumber}`);
 

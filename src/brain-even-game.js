@@ -1,11 +1,12 @@
 import greeting from '../src/cli.js';
+import { userName } from '../src/cli.js';
 import readlineSync from 'readline-sync';
 import getRandom from '../src/randomNum.js';
 
-greeting();
+//greeting();
 
 export default function brainEvenGame() {
-//  greeting();
+  greeting();
 
   const randomNumber = getRandom();
   console.log('Answer "yes" if the number is even, otherwise answer "no".\nQuestion: ' + randomNumber);

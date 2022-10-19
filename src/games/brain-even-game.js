@@ -1,5 +1,6 @@
+/* eslint-disable linebreak-style */
 import readlineSync from 'readline-sync';
-import getRandom from './randomNum.js';
+import getRandom from '../randomNum.js';
 
 export default function brainEvenGame() {
   console.log('Welcome to the Brain Games!');
@@ -9,7 +10,7 @@ export default function brainEvenGame() {
   console.log(`Hello, ${userName}!`);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-  let i = 0
+  let i = 0;
   for (; i < 3;) {
     const randomNumber = getRandom();
     console.log(`Question: ${randomNumber}`);
@@ -39,4 +40,4 @@ export default function brainEvenGame() {
   if (i >= 3) {
     console.log(`Congratulations, ${userName}!`);
   }
-};
+}

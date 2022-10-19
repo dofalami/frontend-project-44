@@ -16,7 +16,7 @@ export default function brainCalcGame() {
 //    const randomNumber = getRandom() + randomOperator() + getRandom();
     const number1 = `${getRandom()}`;
     const number2 = `${getRandom()}`;
-    const operator = `${randomOperator()}`;
+    const operator = '+';
 
     const correctAnswer = number1 + operator + number2;
     console.log('Question:' + number1 + operator + number2);

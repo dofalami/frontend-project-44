@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import getRandom from '../randomNum.js';
-import { answer } from '../randomNum.js';
+import { answer } from '../randomOperator.js';
 
 export default function brainCalcGame() {
   console.log('Welcome to the Brain Games!');

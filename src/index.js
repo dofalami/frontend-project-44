@@ -14,19 +14,19 @@ function questionAnswer() {
   const numberOfRounds = 3;
   let i = 0;
   while (i < numberOfRounds) {
-    const question = () => console.log(`Question: ${expression}`);
+    console.log(`Question: ${expression}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer = correctAnswer) {
       console.log('Correct!');
       i += 1;
     } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${userName}!`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${userName}!`);
       break;
     }
-    if (i >= 3) {
-      console.log(`Congratulations, ${userName}!`);
-    }
+  }
+  if (i >= 3) {
+    console.log(`Congratulations, ${userName}!`);
   }
 }
 

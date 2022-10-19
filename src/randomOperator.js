@@ -15,5 +15,5 @@ export default function randomOperator() {
         operator = '*';
         break;
     }
-}
-return operator;
+    return operator;
+  }

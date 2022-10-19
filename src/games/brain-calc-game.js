@@ -10,10 +10,28 @@ export default function brainCalcGame() {
   console.log(`Hello, ${userName}!`);
   console.log('What is the result of the expression?');
 
+  const opindex = Math.random() * 3 + 1;
+  const result = Math.trunc(opindex);
+    
+  switch(result) {
+  case 1:
+    operator = '+';
+    break;
+            
+  case 2:      
+    operator = '-';
+    break;                
+            
+  case 3:
+    operator = '*';
+    break;
+  }
+// return operator;
+
   let i = 0;
   for (; i < 3;) {
 //    const randomNumber = `${getRandom}` `${randomOperator}` `${getRandom}`;
-    const randomNumber = randomOperator();
+    const randomNumber = operator;
     const correctAnswer = randomNumber;
     console.log(`Question: ${randomNumber}`);
 

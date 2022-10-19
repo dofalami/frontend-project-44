@@ -28,4 +28,4 @@ while (i < numberOfRounds) {
   }
 }
 
-export { greeting, question, userAnswer };
+export { greeting };

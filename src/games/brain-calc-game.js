@@ -20,7 +20,7 @@ export default function brainCalcGame() {
 
     const question = number1 + ' ' + operator + ' ' + number2;
     const correctAnswer = question;
-    console.log('Question:' + number1 + operator + number2);
+    console.log('Question:' + number1 + ' ' + operator + ' ' + number2);
 
     const yourAnswer = readlineSync.question('Your answer: ');
 

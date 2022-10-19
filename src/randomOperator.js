@@ -3,17 +3,17 @@ export default function randomOperator() {
     const result = Math.trunc(opindex);
   
     switch(result) {
-      case 1:
-        operator = '+';
-        break;
-        
-      case 2:
-        operator = '-';
-        break;
-        
-      case 3:
-        operator = '*';
-        break;
-    }
-    return operator;
+        case 1:
+          answer = '+';
+          break;
+                  
+        case 2:      
+          answer = '-';
+          break;                
+                  
+        case 3:
+          answer = '*';
+          break;
+        }
+    return answer;
   }

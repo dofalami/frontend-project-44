@@ -15,5 +15,6 @@ export default function randomOperator() {
           answer = '*';
           break;
         }
-    return answer;
+    const randomOperator = answer;
+    return randomOperator;
 }

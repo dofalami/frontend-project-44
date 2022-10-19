@@ -4,16 +4,16 @@ export default function randomOperator() {
   
     switch(result) {
       case 1:
-        answer = '+';
+        operator = '+';
         break;
         
       case 2:
-        answer = '-';
+        operator = '-';
         break;
         
       case 3:
-        answer = '*';
+        operator = '*';
         break;
     }
-    return answer;
-  }
+}
+return operator;

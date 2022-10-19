@@ -13,7 +13,7 @@ export default function brainCalcGame() {
   let i = 0;
   for (; i < 3;) {
 //    const randomNumber = `${getRandom}` `${randomOperator}` `${getRandom}`;
-    const randomNumber = getRandom + randomOperator + getRandom;
+    const randomNumber = getRandom(getRandom) + randomOperator(randomOperator) + getRandom(getRandom);
     const correctAnswer = randomNumber;
     console.log(`Question: ${randomNumber}`);
 

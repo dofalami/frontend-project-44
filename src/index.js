@@ -2,7 +2,7 @@
 import readlineSync from 'readline-sync';
 import getRandom from '../randomNum.js';
 
-export function greeting() {
+function greeting() {
     console.log('Welcome to the Brain Games!');
 
     const name = () => readlineSync.question('May I have your name? ');
@@ -10,7 +10,7 @@ export function greeting() {
     console.log(`Hello, ${userName}!`);
 }
 
-export function questionAnswer() {
+function questionAnswer() {
     const numberOfRounds = 3;
     let i = 0;
     while (i < numberOfRounds) {

@@ -28,4 +28,3 @@ export default function brainCalcGame() {
 //  if (i >= 3) {
 //    console.log(`Congratulations, ${userName}!`);
 }
-}

@@ -15,7 +15,7 @@ function questionAnswer() {
   let i = 0;
   while (i < numberOfRounds) {
     console.log(`Question: ${expression}`);
-    const userAnswer = () => readlineSync.question('Your answer: ');
+    const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer = correctAnswer) {
       console.log('Correct!');

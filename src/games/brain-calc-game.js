@@ -1,11 +1,11 @@
 import readlineSync from 'readline-sync';
-import greeting from '../index.js';
+import { greeting } from '../index.js';
 import getRandom from '../randomNum.js';
 import randomOperator from '../randomOperator.js';
 
 export default function brainCalcGame() {
   greeting();
-  
+
   console.log('What is the result of the expression?');
 
   let i = 0;

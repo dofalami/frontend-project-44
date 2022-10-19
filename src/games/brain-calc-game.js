@@ -31,7 +31,7 @@ export default function brainCalcGame() {
   let i = 0;
   for (; i < 3;) {
 //    const randomNumber = `${getRandom}` `${randomOperator}` `${getRandom}`;
-    const randomNumber = operator;
+    const randomNumber = getRandom() + operator + getRandom();
     const correctAnswer = randomNumber;
     console.log(`Question: ${randomNumber}`);
 

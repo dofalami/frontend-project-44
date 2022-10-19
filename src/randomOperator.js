@@ -4,17 +4,15 @@ export default function randomOperator() {
   
     switch(result) {
         case 1:
-          answer === '+';
-          break;
+          return '+';
+          
                   
         case 2:      
-          answer === '-';
-          break;                
+          return '-';
+                          
                   
         case 3:
-          answer === '*';
-          break;
-        }
-//    const randomOperator = answer;
-    return answer;
+          return '*';
+          
+    }
 }

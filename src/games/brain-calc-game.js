@@ -1,13 +1,11 @@
 import readlineSync from 'readline-sync';
+import greeting from '../index.js';
 import getRandom from '../randomNum.js';
- import randomOperator from '../randomOperator.js';
+import randomOperator from '../randomOperator.js';
 
 export default function brainCalcGame() {
-  console.log('Welcome to the Brain Games!');
-
-  const name = () => readlineSync.question('May I have your name? ');
-  const userName = name();
-  console.log(`Hello, ${userName}!`);
+  greeting();
+  
   console.log('What is the result of the expression?');
 
   let i = 0;

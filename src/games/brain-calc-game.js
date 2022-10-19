@@ -15,33 +15,33 @@ export default function brainCalcGame() {
     
   switch(result) {
   case 1:
-    operator = '+';
+    answer = '+';
     break;
             
   case 2:      
-    operator = '-';
+    answer = '-';
     break;                
             
   case 3:
-    operator = '*';
+    answer = '*';
     break;
   }
 // return operator;
 
   let i = 0;
   for (; i < 3;) {
-    const randomNumber = `${getRandom}` `${operator}` `${getRandom}`;
+    const randomNumber = `${getRandom}` `${answer}` `${getRandom}`;
 //    const randomNumber = getRandom() + operator + getRandom();
     const correctAnswer = randomNumber;
     console.log(`Question: ${randomNumber}`);
 
-    const answer = readlineSync.question('Your answer: ');
+    const yourAnswer = readlineSync.question('Your answer: ');
 
-    if (correctAnswer == answer) {
+    if (correctAnswer == yourAnswer) {
         console.log('Correct!');
         i += 1;
       } else {
-        console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${userName}!`);
+        console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${userName}!`);
         break;
       }
     }

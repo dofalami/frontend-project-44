@@ -1,4 +1,4 @@
-import readlineSync from 'readline-sync';
+// import readlineSync from 'readline-sync';
 import { greeting } from '../index.js';
 import getRandom from '../randomNum.js';
 import randomOperator from '../randomOperator.js';

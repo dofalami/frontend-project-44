@@ -10,37 +10,22 @@ function greeting() {
     console.log(`Hello, ${userName}!`);
 }
 
-function questionAnswer() {
-    const numberOfRounds = 3;
-    let i = 0;
-    while (i < numberOfRounds) {
-      const randomNumber = randomNum();
-      console.log(`Question: ${randomNumber}`);
-  
-      const answer = readlineSync.question('Your answer: ');
-  
-      if (randomNumber % 2 === 0) {
-        if (answer === 'yes') {
-          console.log('Correct!');
-          i += 1;
-        } else {
-          console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${userName}!`);
-          break;
-        }
-      }
-  
-      if (randomNumber % 2 === 1) {
-        if (answer === 'no') {
-          console.log('Correct!');
-          i += 1;
-        } else {
-          console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${userName}!`);
-          break;
-        }
-      }
-    }
-    if (i >= 3) {
-      console.log(`Congratulations, ${userName}!`);
-    }
+const numberOfRounds = 3;
+let i = 0;
+while (i < numberOfRounds) {
+  const question = () => console.log(`Question: ${expression}`);
+  const userAnswer = readlineSync.question('Your answer: ');
+
+  if (userAnswer = correctAnswer) {
+    console.log('Correct!');
+    i += 1;
+  } else {
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${userName}!`);
+    break;
+  }
+  if (i >= 3) {
+    console.log(`Congratulations, ${userName}!`);
+  }
 }
-export { greeting };
+
+export { greeting, question, userAnswer };

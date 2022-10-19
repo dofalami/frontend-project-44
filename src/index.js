@@ -1,6 +1,6 @@
 // логика игр
 import readlineSync from 'readline-sync';
-import getRandom from '../randomNum.js';
+// import randomNum from '../randomNum.js';
 
 function greeting() {
     console.log('Welcome to the Brain Games!');
@@ -14,7 +14,7 @@ function questionAnswer() {
     const numberOfRounds = 3;
     let i = 0;
     while (i < numberOfRounds) {
-      const randomNumber = getRandom();
+      const randomNumber = randomNum();
       console.log(`Question: ${randomNumber}`);
   
       const answer = readlineSync.question('Your answer: ');

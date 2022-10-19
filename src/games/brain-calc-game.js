@@ -15,18 +15,18 @@ export default function brainCalcGame() {
     
   switch(result) {
   case 1:
-    operator = '+';
+    opr = '+';
     break;
             
   case 2:      
-    operator = '-';
+    opr = '-';
     break;                
             
   case 3:
-    operator = '*';
+    opr = '*';
     break;
   }
-// return operator;
+ const operator = opr;
 
   let i = 0;
   for (; i < 3;) {

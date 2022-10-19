@@ -14,8 +14,7 @@ export default function brainCalcGame() {
   for (; i < 3;) {
 //    const randomNumber = `${getRandom()} ${randomOperator()} ${getRandom()}`;
 //    const randomNumber = getRandom() + randomOperator() + getRandom();
-    const question = () => console.log(`Question: ${getRandom()} ${randomOperator()} ${getRandom()}`);
-    const correctAnswer = answer;
+    console.log(`Question: ${getRandom()} ${randomOperator()} ${getRandom()}`);
 
     const yourAnswer = readlineSync.question('Your answer: ');
 

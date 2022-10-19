@@ -12,8 +12,6 @@ export default function brainCalcGame() {
 
   let i = 0;
   for (; i < 3;) {
-//    const randomNumber = `${getRandom()} ${randomOperator()} ${getRandom()}`;
-//    const randomNumber = getRandom() + randomOperator() + getRandom();
     const number1 = `${getRandom()}`;
     const number2 = `${getRandom()}`;
     const operator = `${randomOperator()}`;
@@ -32,6 +30,7 @@ export default function brainCalcGame() {
         break;
       }
     }
-//  if (i >= 3) {
-//    console.log(`Congratulations, ${userName}!`);
+  if (i >= 3) {
+    console.log(`Congratulations, ${userName}!`);
+  }
 }

@@ -19,7 +19,7 @@ export default function brainCalcGame() {
 
     const answer = readlineSync.question('Your answer: ');
 
-    if (correctAnswer = answer) {
+    if (correctAnswer == answer) {
         console.log('Correct!');
         i += 1;
       } else {

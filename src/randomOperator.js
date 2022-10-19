@@ -1,4 +1,4 @@
-function randomOperator() {
+export default function randomOperator() {
     const opindex = Math.random() * 3 + 1;
     const result = Math.trunc(opindex);
   
@@ -16,5 +16,4 @@ function randomOperator() {
           break;
         }
     return answer;
-  }
-export { answer };
+}

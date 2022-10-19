@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import getRandom from '../randomNum.js';
-import { answer } from '../randomOperator.js';
+import randomOperator from '../randomOperator.js';
 
 export default function brainCalcGame() {
   console.log('Welcome to the Brain Games!');
@@ -12,7 +12,7 @@ export default function brainCalcGame() {
 
   let i = 0;
   for (; i < 3;) {
-    const randomNumber = `${getRandom}` `${answer}` `${getRandom}`;
+    const randomNumber = `${getRandom}` `${randomOperator}` `${getRandom}`;
 //    const randomNumber = getRandom() + operator + getRandom();
     const correctAnswer = randomNumber;
     console.log(`Question: ${randomNumber}`);

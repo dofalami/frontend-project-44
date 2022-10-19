@@ -10,12 +10,12 @@ export default function brainCalcGame() {
 
   let i = 0;
   for (; i < 3;) {
-    const number1 = `${getRandom()}`;
-    const number2 = `${getRandom()}`;
+    const number1 = `${randomNum()}`;
+    const number2 = `${randomNum()}`;
     const operator = `${randomOperator()}`;
 
-    const question = number1 + ' ' + operator + ' ' + number2;
-    const correctAnswer = eval(question);
+    const expression = number1 + ' ' + operator + ' ' + number2;
+    const correctAnswer = eval(expression);
     console.log('Question: ' + number1 + ' ' + operator + ' ' + number2);
 
     const yourAnswer = readlineSync.question('Your answer: ');

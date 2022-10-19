@@ -30,4 +30,4 @@ function questionAnswer() {
   }
 }
 
-export { greeting, userAnswer, questionAnswer };
+export { greeting, questionAnswer };

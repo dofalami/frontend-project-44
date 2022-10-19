@@ -1,5 +1,5 @@
 // import readlineSync from 'readline-sync';
-import { greeting, userAnswer, questionAnswer } from '../index.js';
+import { greeting, questionAnswer } from '../index.js';
 import getRandom from '../randomNum.js';
 import randomOperator from '../randomOperator.js';
 

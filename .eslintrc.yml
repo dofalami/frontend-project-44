@@ -12,3 +12,5 @@ rules:
     - error
     - ignorePackages
     - js: always
+    - linebreak-style: ["error", "windows"]
+

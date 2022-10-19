@@ -10,8 +10,8 @@ export default function brainCalcGame() {
 
   let i = 0;
   for (; i < 3;) {
-    const number1 = `${randomNum()}`;
-    const number2 = `${randomNum()}`;
+    const number1 = `${getRandom()}`;
+    const number2 = `${getRandom()}`;
     const operator = `${randomOperator()}`;
 
     const expression = number1 + ' ' + operator + ' ' + number2;

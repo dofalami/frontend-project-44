@@ -1,6 +1,6 @@
 // логика игр
 import readlineSync from 'readline-sync';
-// import randomNum from '../randomNum.js';
+// import getRandom from '../randomNum.js';
 
 function greeting() {
     console.log('Welcome to the Brain Games!');

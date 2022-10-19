@@ -23,7 +23,7 @@ export default function brainCalcGame() {
         console.log('Correct!');
         i += 1;
       } else {
-        console.log(`'${answer}' is wrong answer ;(. Correct answer was '`${correctAnswer}`'. Let's try again, ${userName}!`);
+        console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${userName}!`);
         break;
       }
     }

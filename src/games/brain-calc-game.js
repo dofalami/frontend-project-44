@@ -18,14 +18,12 @@ export default function brainCalcGame() {
   const correctAnswer = eval(expression);
   console.log('Question: ' + number1 + ' ' + operator + ' ' + number2);
 
-  if (correctAnswer == yourAnswer) {
-    console.log('Correct!');
-    i += 1;
-  } else {
-      return console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${userName}!`);
-    }
+//  if (correctAnswer == yourAnswer) {
+//    console.log('Correct!');
+//    i += 1;
+//  } else {
+//      return console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${userName}!`);
+//    }
 }
-if (i >= 3) {
-  console.log(`Congratulations, ${userName}!`);
-}
+
 

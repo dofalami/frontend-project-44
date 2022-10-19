@@ -15,23 +15,23 @@ export default function brainCalcGame() {
     
   switch(result) {
   case 1:
-    opr = '+';
+    operator = '+';
     break;
             
   case 2:      
-    opr = '-';
+    operator = '-';
     break;                
             
   case 3:
-    opr = '*';
+    operator = '*';
     break;
   }
- const operator = opr;
+// return operator;
 
   let i = 0;
   for (; i < 3;) {
-//    const randomNumber = `${getRandom}` `${randomOperator}` `${getRandom}`;
-    const randomNumber = getRandom() + operator + getRandom();
+    const randomNumber = `${getRandom}` `${operator}` `${getRandom}`;
+//    const randomNumber = getRandom() + operator + getRandom();
     const correctAnswer = randomNumber;
     console.log(`Question: ${randomNumber}`);
 

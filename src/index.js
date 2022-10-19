@@ -43,3 +43,4 @@ export function questionAnswer() {
       console.log(`Congratulations, ${userName}!`);
     }
 }
+export { greeting };

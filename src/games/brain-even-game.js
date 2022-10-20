@@ -3,10 +3,10 @@ import getRandom from '../randomNum.js';
 
 const firstQuestion = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-// const randomNumber = getRandom();
+ const randomNumber = getRandom();
 
 const questionAnswer = () => {
-  const expression = `${getRandom}`;
+  const expression = eval(randomNumber);
   const correctAnswer = () => {
     if (expression % 2 === 0) {
       if (userAnswer === 'yes') {

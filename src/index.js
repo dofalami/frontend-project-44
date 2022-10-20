@@ -1,17 +1,15 @@
 // логика игр
 import readlineSync from 'readline-sync';
-// import { expression } from '../brain-calc.js'
-// import getRandom  from '../randomNum.js';
 
-function greeting() {
-    console.log('Welcome to the Brain Games!');
+export default gameLogic = (firstQuestion, questionAnswer) => {
+  console.log('Welcome to the Brain Games!');
 
-    const name = () => readlineSync.question('May I have your name? ');
-    const userName = name();
-    console.log(`Hello, ${userName}!`);
-}
+  const name = () => readlineSync.question('May I have your name? ');
+  const userName = name();
+  console.log(`Hello, ${userName}!`);
+  console.log(firstQuestion);
 
-function questionAnswer() {
+// questionAnswer()
   const numberOfRounds = 3;
   let i = 0;
   while (i < numberOfRounds) {
@@ -32,4 +30,4 @@ function questionAnswer() {
   }
 }
 
-export { greeting, questionAnswer };
+// export { greeting, questionAnswer };

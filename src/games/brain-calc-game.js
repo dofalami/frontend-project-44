@@ -1,12 +1,12 @@
 // import readlineSync from 'readline-sync';
-import { greeting, questionAnswer } from '../index.js';
+import run from '../index.js';
 import getRandom from '../randomNum.js';
 import randomOperator from '../randomOperator.js';
 
 export default function brainCalcGame() {
-  greeting();
+//  gameLogic();
 
-  console.log('What is the result of the expression?');
+  const firstQuestion = 'What is the result of the expression?';
 
   const number1 = `${getRandom()}`;
   const number2 = `${getRandom()}`;

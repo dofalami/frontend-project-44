@@ -27,6 +27,6 @@ export default function brainCalcGame() {
 //    }
 }
 
-export { expression };
+// export { expression };
 
 

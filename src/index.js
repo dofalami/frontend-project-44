@@ -1,7 +1,7 @@
 // логика игр
 import readlineSync from 'readline-sync';
 
-export default gameLogic = (firstQuestion, questionAnswer) => {
+export default (firstQuestion, questionAnswer) => {
   console.log('Welcome to the Brain Games!');
 
   const name = () => readlineSync.question('May I have your name? ');

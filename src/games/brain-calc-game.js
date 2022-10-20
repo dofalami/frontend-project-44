@@ -30,7 +30,7 @@ function randomOperator() {
   const operator = `${randomOperator()}`;
   const expression = number1 + ' ' + operator + ' ' + number2;
   const correctAnswer = eval(expression);
-  return expression, correctAnswer;
+  return [expression, correctAnswer];
   }
 
   export default () => {

@@ -13,9 +13,9 @@ export default (firstQuestion, questionAnswer) => {
   let i = 0;
   while (i < numberOfRounds) {
     const [expression, correctAnswer] = questionAnswer();
+
     console.log(`Question: ${expression}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    console.log(userAnswer);
 
     if (userAnswer = correctAnswer) {
       console.log('Correct!');
@@ -29,5 +29,3 @@ export default (firstQuestion, questionAnswer) => {
     console.log(`Congratulations, ${userName}!`);
   }
 }
-
-// export { greeting, questionAnswer };

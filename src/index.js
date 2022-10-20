@@ -9,8 +9,8 @@ export default (firstQuestion, questionAnswer) => {
   console.log(`Hello, ${userName}!`);
   console.log(firstQuestion);
 
-// questionAnswer()
-  const numberOfRounds = 3;
+  const [expression, correctAnswer] = questionAnswer();
+    const numberOfRounds = 3;
   let i = 0;
   while (i < numberOfRounds) {
     console.log(`Question: ${expression}`);

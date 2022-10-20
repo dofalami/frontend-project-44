@@ -1,10 +1,10 @@
 // import readlineSync from 'readline-sync';
-import gameLogic from '../index.js';
+import * as gameLogic from '../index.js';
 import getRandom from '../randomNum.js';
 import randomOperator from '../randomOperator.js';
 
 export default function brainCalcGame() {
-//  gameLogic();
+  gameLogic();
 
   const firstQuestion = 'What is the result of the expression?';
 
@@ -17,7 +17,7 @@ export default function brainCalcGame() {
 
   questionAnswer();
 
-  gameLogic();
+ // gameLogic();
 
 //  console.log('Question: ' + number1 + ' ' + operator + ' ' + number2);
 //  console.log(userAnswer);

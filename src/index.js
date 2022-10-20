@@ -15,9 +15,9 @@ export default (firstQuestion, questionAnswer) => {
     const [expression, correctAnswer] = questionAnswer();
 
     console.log(`Question: ${expression}`);
-    let userAnswer = readlineSync.question('Your answer: ');
+    const userAnswer = readlineSync.question('Your answer: ');
 
-    if (userAnswer = correctAnswer) {
+    if (userAnswer == correctAnswer) {
       console.log('Correct!');
       i += 1;
     } else {

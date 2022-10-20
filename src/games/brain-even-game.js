@@ -7,7 +7,7 @@ const firstQuestion = 'Answer "yes" if the number is even, otherwise answer "no"
 
 const questionAnswer = () => {
   const expression = eval(randomNumber);
-  const correctAnswer = () => {
+
     if (expression % 2 === 0) {
       if (userAnswer == 'yes') {
         userAnswer = correctAnswer;
@@ -19,7 +19,7 @@ const questionAnswer = () => {
         userAnswer = correctAnswer;
       }
     }
-  } 
+
   return [expression, correctAnswer]; 
 }
 

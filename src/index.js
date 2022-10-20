@@ -1,5 +1,6 @@
 // логика игр
 import readlineSync from 'readline-sync';
+import { expression } from '../brain-calc.js'
 // import getRandom  from '../randomNum.js';
 
 function greeting() {

@@ -8,13 +8,13 @@ const questionAnswer = () => {
   const expression = eval(randomNumber);
   let correctAnswer = '';
   
-    if (expression % 2 === 0) {
-      correctAnswer = 'yes';
-    }
+  if (expression % 2 === 0) {
+    correctAnswer = 'yes';
+  }
 
-    if (expression % 2 === 1) {
-      correctAnswer = 'no';
-    }
+  if (expression % 2 === 1) {
+    correctAnswer = 'no';
+  }
 
   return [expression, correctAnswer]; 
 }

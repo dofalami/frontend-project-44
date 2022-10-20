@@ -17,7 +17,7 @@ export default function brainCalcGame() {
   const expression = number1 + ' ' + operator + ' ' + number2;
   const correctAnswer = eval(expression);
   console.log('Question: ' + number1 + ' ' + operator + ' ' + number2);
-  console.log(userAnswer);
+  const userAnswer = readlineSync.question('Your answer: ');
 
 //  if (correctAnswer == yourAnswer) {
 //    console.log('Correct!');

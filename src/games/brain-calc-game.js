@@ -8,15 +8,15 @@ export default function brainCalcGame() {
 
   console.log('What is the result of the expression?');
 
-  questionAnswer;
-
   const number1 = `${getRandom()}`;
   const number2 = `${getRandom()}`;
   const operator = `${randomOperator()}`;
 
   const expression = number1 + ' ' + operator + ' ' + number2;
   const correctAnswer = eval(expression);
-  console.log('Question: ' + number1 + ' ' + operator + ' ' + number2);
+
+  questionAnswer();
+//  console.log('Question: ' + number1 + ' ' + operator + ' ' + number2);
 //  console.log(userAnswer);
 
 //  if (correctAnswer == yourAnswer) {

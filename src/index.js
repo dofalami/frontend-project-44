@@ -10,7 +10,7 @@ export default (firstQuestion, questionAnswer) => {
   console.log(firstQuestion);
 
   const [expression, correctAnswer] = questionAnswer();
-    const numberOfRounds = 3;
+  const numberOfRounds = 3;
   let i = 0;
   while (i < numberOfRounds) {
     console.log(`Question: ${expression}`);

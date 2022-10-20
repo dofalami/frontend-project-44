@@ -1,5 +1,5 @@
 // import readlineSync from 'readline-sync';
-import run from '../index.js';
+import gameLogic from '../index.js';
 import getRandom from '../randomNum.js';
 import randomOperator from '../randomOperator.js';
 
@@ -16,6 +16,9 @@ export default function brainCalcGame() {
   const correctAnswer = eval(expression);
 
   questionAnswer();
+
+  gameLogic();
+
 //  console.log('Question: ' + number1 + ' ' + operator + ' ' + number2);
 //  console.log(userAnswer);
 

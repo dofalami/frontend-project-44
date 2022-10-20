@@ -10,13 +10,13 @@ const questionAnswer = () => {
   const correctAnswer = () => {
     if (expression % 2 === 0) {
       if (userAnswer === 'yes') {
-        console.log('Correct!');
+        userAnswer = correctAnswer;
       }
     }
 
     if (expression % 2 === 1) {
       if (userAnswer === 'no') {
-        console.log('Correct!');
+        userAnswer = correctAnswer;
       }
     }
   } 

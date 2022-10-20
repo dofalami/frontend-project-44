@@ -12,7 +12,7 @@ export default (firstQuestion, questionAnswer) => {
   const numberOfRounds = 3;
   let i = 0;
   while (i < numberOfRounds) {
-    const {expression, correctAnswer} = questionAnswer();
+    const [expression, correctAnswer] = questionAnswer();
 
     console.log(`Question: ${expression}`);
     const userAnswer = readlineSync.question('Your answer: ');
@@ -22,10 +22,11 @@ export default (firstQuestion, questionAnswer) => {
       i += 1;
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${userName}!`);
-      break;
+      return false;
     }
   }
   if (i >= 3) {
     console.log(`Congratulations, ${userName}!`);
+    return true;
   }
 }

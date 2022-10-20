@@ -9,10 +9,10 @@ export default (firstQuestion, questionAnswer) => {
   console.log(`Hello, ${userName}!`);
   console.log(firstQuestion);
 
-  const [expression, correctAnswer] = questionAnswer();
   const numberOfRounds = 3;
   let i = 0;
   while (i < numberOfRounds) {
+    const [expression, correctAnswer] = questionAnswer();
     console.log(`Question: ${expression}`);
     const userAnswer = readlineSync.question('Your answer: ');
     console.log(userAnswer);

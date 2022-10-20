@@ -9,14 +9,14 @@ const questionAnswer = () => {
   const expression = eval(randomNumber);
   const correctAnswer = () => {
     if (expression % 2 === 0) {
-      if (userAnswer === 'yes') {
-        userAnswer == correctAnswer;
+      if (userAnswer == 'yes') {
+        userAnswer = correctAnswer;
       }
     }
 
     if (expression % 2 === 1) {
-      if (userAnswer === 'no') {
-        userAnswer == correctAnswer;
+      if (userAnswer == 'no') {
+        userAnswer = correctAnswer;
       }
     }
   } 

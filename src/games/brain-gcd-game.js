@@ -4,9 +4,10 @@ import getRandom from '../randomNum.js';
 const firstQuestion = 'Find the greatest common divisor of given numbers.';
 
 const questionAnswer = () => {
-    const randomNumber = getRandom();
-    const expression = randomNumber + ' ' + randomNumber;
-    let correctAnswer = '2';
+    const randomNumber1 = getRandom();
+    const randomNumber2 = getRandom();
+    const expression = randomNumber1 + ' ' + randomNumber2;
+    const correctAnswer = '';
 
     return [expression, correctAnswer];
 }

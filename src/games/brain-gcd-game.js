@@ -7,7 +7,7 @@ const questionAnswer = () => {
     const randomNumber1 = getRandom();
     const randomNumber2 = getRandom();
     const expression = randomNumber1 + ' ' + randomNumber2;
-    const correctAnswer = '';
+    let correctAnswer = '';
 
     return [expression, correctAnswer];
 }

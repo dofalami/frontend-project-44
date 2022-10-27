@@ -20,7 +20,7 @@ const questionAnswer = () => {
         bigNum = randomNumber1;
     }
     // divisor - 1!!!!!
-    while (bigNum % divisor !== 0) {
+    while (bigNum % divisor != 0) {
         divisor = divisor - 1;
     }
     correctAnswer = divisor;

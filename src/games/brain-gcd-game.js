@@ -16,15 +16,15 @@ const questionAnswer = () => {
     
     if (randomNumber1 == 0) correctAnswer = randomNumber2;
 
-    const a = randomNumber1;
-    const b = randomNumber2;
+    let a = randomNumber1;
+    let b = randomNumber2;
 
     while (b != 0) {
         if (a > b) a = a - b;
         else b = b - a;
     }
     correctAnswer = a;
-    
+
     console.log(divisor);
     console.log(correctAnswer);
 

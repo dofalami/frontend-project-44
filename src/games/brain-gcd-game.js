@@ -9,7 +9,6 @@ const questionAnswer = () => {
     const expression = randomNumber1 + ' ' + randomNumber2;
 //    let correctAnswer = '';
     console.log(expression);
-    console.log(randomNumber1);
 
     let divisor = '';
     let bigNum = '';
@@ -21,11 +20,15 @@ const questionAnswer = () => {
         divisor = randomNumber2;
         bigNum = randomNumber1;
     }
+    console.log(divisor);
+    console.log(bigNum);
  // !!!!    
     while (bigNum % (divisor - 1) != 0) {
         divisor = divisor - 1;
     }
     const correctAnswer = divisor;
+    console.log(divisor);
+    console.log(correctAnswer);
 
     return [expression, correctAnswer];
 }

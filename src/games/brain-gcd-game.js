@@ -8,11 +8,12 @@ const questionAnswer = () => {
     const randomNumber2 = getRandom();
     const expression = randomNumber1 + ' ' + randomNumber2;
 //    let correctAnswer = '';
-    console.log(expression);
 
     let divisor = '';
     let smollNum = '';
     let bigNum = '';
+    let correctAnswer = '';
+    
     if (randomNumber1 <= randomNumber2) {
         smollNum = randomNumber1;
         bigNum = randomNumber2;
@@ -21,13 +22,11 @@ const questionAnswer = () => {
         smollNum = randomNumber2;
         bigNum = randomNumber1;
     }
-    console.log(smollNum);
-    console.log(bigNum);
  // !!!!    
-    for (let divisor = smollNum; bigNum % divisor != 0;) {
-        divisor = divisor - 1;
+    for (let divisor = smollNum; bigNum % divisor != 0; divisor--) {
+//        divisor = divisor - 1;
+        correctAnswer = divisor;
     }
-    let correctAnswer = divisor;
     console.log(divisor);
     console.log(correctAnswer);
 

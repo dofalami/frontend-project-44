@@ -19,8 +19,8 @@ const questionAnswer = () => {
         divisor = randomNumber2;
         bigNum = randomNumber1;
     }
-    // divisor - 1!!!!!
-    while (bigNum % divisor != 0) {
+    
+    while (bigNum % (divisor - 1) != 0) {
         divisor = divisor - 1;
     }
     const correctAnswer = divisor;

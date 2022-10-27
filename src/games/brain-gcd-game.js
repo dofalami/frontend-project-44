@@ -6,7 +6,7 @@ const firstQuestion = 'Find the greatest common divisor of given numbers.';
 const questionAnswer = () => {
     const randomNumber1 = getRandom();
     const randomNumber2 = getRandom();
-    const expression = randomNumber1 + ' ' + randomNumber2;
+    let expression = randomNumber1 + ' ' + randomNumber2;
 //    let correctAnswer = '';
 
     let divisor = '';
@@ -19,7 +19,7 @@ const questionAnswer = () => {
         divisor = randomNumber2;
         bigNum = randomNumber1;
     }
-    
+ // !!!!    
     while (bigNum % (divisor - 1) != 0) {
         divisor = divisor - 1;
     }

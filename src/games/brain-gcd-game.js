@@ -26,7 +26,7 @@ const questionAnswer = () => {
     while (bigNum % divisor != 0) {
         divisor = divisor - 1;
     }
-    const correctAnswer = divisor;
+    let correctAnswer = divisor;
     console.log(divisor);
     console.log(correctAnswer);
 

@@ -12,8 +12,6 @@ const questionAnswer = () => {
     let divisor = '';
     let smollNum = '';
     let bigNum = '';
-    let correctAnswer = '';
-    
     if (randomNumber1 <= randomNumber2) {
         smollNum = randomNumber1;
         bigNum = randomNumber2;
@@ -23,8 +21,8 @@ const questionAnswer = () => {
         bigNum = randomNumber1;
     }
  // !!!!    
-    for (let divisor = smollNum; bigNum % divisor != 0; divisor--) {
-//        divisor = divisor - 1;
+    for (let divisor = smollNum; bigNum % divisor != 0;) {
+        divisor = divisor - 1;
         correctAnswer = divisor;
     }
     console.log(divisor);

@@ -19,8 +19,8 @@ const questionAnswer = () => {
     
     while (expression % divisor !== 0) {
         divisor = divisor - 1;
+        correctAnswer = divisor;
     }
-    correctAnswer = divisor;
 
     return [expression, correctAnswer];
 }

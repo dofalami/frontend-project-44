@@ -12,19 +12,19 @@ const questionAnswer = () => {
     let divisor = '';
     let smollNum = '';
     let bigNum = '';
-    if (randomNumber1 <= randomNumber2) {
-        smollNum = randomNumber1;
-        bigNum = randomNumber2;
+    let correctAnswer = '';
+    
+    if (randomNumber1 == 0) correctAnswer = randomNumber2;
+
+    const a = randomNumber1;
+    const b = randomNumber2;
+
+    while (b != 0) {
+        if (a > b) a = a - b;
+        else b = b - a;
     }
-    else {
-        smollNum = randomNumber2;
-        bigNum = randomNumber1;
-    }
- // !!!!    
-    for (divisor = smollNum; (bigNum % divisor != 0) && ((smollNum - 1) % divisor !== 0);) {
-        divisor = divisor - 1;
-    }
-    const correctAnswer = divisor;
+    correctAnswer = a;
+    
     console.log(divisor);
     console.log(correctAnswer);
 

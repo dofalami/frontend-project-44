@@ -1,27 +1,22 @@
-// import readlineSync from 'readline-sync';
 import run from '../index.js';
 import getRandom from '../randomNum.js';
-// import randomOperator from '../randomOperator.js';
 
-  const firstQuestion = 'What is the result of the expression?';
+const firstQuestion = 'What is the result of the expression?';
 
 function randomOperator() {
-    const opindex = Math.random() * 3 + 1;
-    const result = Math.trunc(opindex);
+  const opindex = Math.random() * 3 + 1;
+  const result = Math.trunc(opindex);
   
-    switch(result) {
-        case 1:
-          return '+';
-          
+  switch(result) {
+    case 1:
+      return '+'; 
                   
-        case 2:      
-          return '-';
-                          
-                  
-        case 3:
-          return '*';
-          
-    }
+    case 2:      
+      return '-';
+                                            
+    case 3:
+      return '*';
+  }
 }
 
   const questionAnswer = () => {
@@ -35,4 +30,4 @@ function randomOperator() {
 
   export default () => {
     run (firstQuestion, questionAnswer);
-  };
+  }

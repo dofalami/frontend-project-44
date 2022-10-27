@@ -9,13 +9,12 @@ const questionAnswer = () => {
     const expression = randomNumber1 + ' ' + randomNumber2;
     let correctAnswer = '';
 
+    let divisor = '';
     if (randomNumber1 >= randomNumber2) {
-        const divisor = randomNumber1;
-        console.log(divisor);
+        divisor = randomNumber1;
     }
     else {
-        const divisor = randomNumber2;
-        console.log(divisor);
+        divisor = randomNumber2;
     }
     
     while (expression % divisor !== 0) {

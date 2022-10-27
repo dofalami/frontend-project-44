@@ -10,14 +10,17 @@ const questionAnswer = () => {
     let correctAnswer = '';
 
     let divisor = '';
+    let bigNum = '';
     if (randomNumber1 <= randomNumber2) {
         divisor = randomNumber1;
+        bigNum = randomNumber2;
     }
     else {
         divisor = randomNumber2;
+        bigNum = randomNumber1;
     }
-    
-    while (expression % divisor !== 0) {
+    // divisor - 1!!!!!
+    while (bigNum % divisor !== 0) {
         divisor = divisor - 1;
     }
     correctAnswer = divisor;

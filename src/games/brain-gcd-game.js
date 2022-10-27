@@ -25,10 +25,7 @@ const questionAnswer = () => {
     }
     correctAnswer = a;
 
-    console.log(divisor);
-    console.log(correctAnswer);
-
-    return [expression, correctAnswer];
+    return [expression, correctAnswer(a)];
 }
 export default () => {
     run (firstQuestion, questionAnswer);

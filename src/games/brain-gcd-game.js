@@ -9,6 +9,20 @@ const questionAnswer = () => {
     const expression = randomNumber1 + ' ' + randomNumber2;
     let correctAnswer = '';
 
+    if (randomNumber1 >= randomNumber2) {
+        const divisor = randomNumber1;
+        console.log(divisor);
+    }
+    else {
+        const divisor = randomNumber2;
+        console.log(divisor);
+    }
+    
+    while (expression % divisor !== 0) {
+        divisor = divisor - 1;
+    }
+    correctAnswer = divisor;
+
     return [expression, correctAnswer];
 }
 export default () => {

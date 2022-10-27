@@ -11,3 +11,7 @@
 ### 2. Brain Calc
 
 <a href="https://asciinema.org/a/530347" target="_blank"><img src="https://asciinema.org/a/530347.svg" /></a>
+
+### 3. Brain gcd
+
+<a href="https://asciinema.org/a/532347" target="_blank"><img src="https://asciinema.org/a/532347.svg" /></a>

@@ -21,7 +21,7 @@ const questionAnswer = () => {
         bigNum = randomNumber1;
     }
  // !!!!    
-    for (divisor = smollNum; (bigNum % divisor != 0) && (smollNum % divisor !== 0);) {
+    for (divisor = smollNum; (bigNum % divisor != 0) && ((smollNum - 1) % divisor !== 0);) {
         divisor = divisor - 1;
     }
     const correctAnswer = divisor;

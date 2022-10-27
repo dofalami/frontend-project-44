@@ -6,8 +6,10 @@ const firstQuestion = 'Find the greatest common divisor of given numbers.';
 const questionAnswer = () => {
     const randomNumber1 = getRandom();
     const randomNumber2 = getRandom();
-    let expression = randomNumber1 + ' ' + randomNumber2;
+    const expression = randomNumber1 + ' ' + randomNumber2;
 //    let correctAnswer = '';
+    console.log(expression);
+    console.log(randomNumber1);
 
     let divisor = '';
     let bigNum = '';

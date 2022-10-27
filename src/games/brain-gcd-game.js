@@ -23,7 +23,7 @@ const questionAnswer = () => {
     while (bigNum % divisor != 0) {
         divisor = divisor - 1;
     }
-    correctAnswer = divisor;
+    let correctAnswer = divisor;
 
     return [expression, correctAnswer];
 }

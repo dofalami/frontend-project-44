@@ -7,7 +7,7 @@ const questionAnswer = () => {
     const randomNumber1 = `${getRandom()}`;
     const randomNumber2 = `${getRandom()}`;
     const expression = randomNumber1 + ' ' + randomNumber2;
-    let correctAnswer = '';
+//    let correctAnswer = '';
 
     let divisor = '';
     let bigNum = '';
@@ -23,7 +23,7 @@ const questionAnswer = () => {
     while (bigNum % divisor != 0) {
         divisor = divisor - 1;
     }
-    correctAnswer == divisor;
+    correctAnswer = divisor;
 
     return [expression, correctAnswer];
 }

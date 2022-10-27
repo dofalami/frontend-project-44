@@ -21,7 +21,7 @@ export default (firstQuestion, questionAnswer) => {
       console.log('Correct!');
       i += 1;
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${userName}!`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${userName}!`);
       return false;
     }
   }

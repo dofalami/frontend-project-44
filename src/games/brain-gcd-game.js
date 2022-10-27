@@ -7,11 +7,7 @@ const questionAnswer = () => {
     const randomNumber1 = getRandom();
     const randomNumber2 = getRandom();
     const expression = randomNumber1 + ' ' + randomNumber2;
-//    let correctAnswer = '';
 
-    let divisor = '';
-    let smollNum = '';
-    let bigNum = '';
     let correctAnswer = '';
     
     if (randomNumber1 == 0) correctAnswer = randomNumber2;
@@ -25,7 +21,7 @@ const questionAnswer = () => {
     }
     correctAnswer = a;
 
-    return [expression, correctAnswer(a)];
+    return [expression, correctAnswer];
 }
 export default () => {
     run (firstQuestion, questionAnswer);

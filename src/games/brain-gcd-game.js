@@ -21,10 +21,10 @@ const questionAnswer = () => {
         bigNum = randomNumber1;
     }
  // !!!!    
-    for (let divisor = smollNum; bigNum % divisor != 0;) {
+    for (divisor = smollNum; bigNum % divisor != 0;) {
         divisor = divisor - 1;
-        correctAnswer = divisor;
     }
+    const correctAnswer = divisor;
     console.log(divisor);
     console.log(correctAnswer);
 

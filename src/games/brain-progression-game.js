@@ -10,7 +10,6 @@ console.log(getRandomMin());
 
 // a_n = a_1 + d * (n - 1) !!! или просто взять соответствующее число из ..
 // 1. массив из рандом чисел до индекса 9, при этом числа идут в порядке прогрессии
-    function makeProgression() {
         const firstNum = getRandom();
         const step = getRandomMin();
 
@@ -26,7 +25,6 @@ console.log(getRandomMin());
         }
         console.log(progression);
         return progression;
-    }
 
 const firstQuestion = 'What number is missing in the progression?';
 

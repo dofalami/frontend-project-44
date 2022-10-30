@@ -25,7 +25,7 @@ const questionAnswer = () => {
       b -= a;
     }
   }
-  correctAnswer = a;
+  correctAnswer = String(a);
 
   return [expression, correctAnswer];
 };

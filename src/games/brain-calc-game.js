@@ -3,7 +3,7 @@ import { getRandom } from '../randomNum.js';
 
 const firstQuestion = 'What is the result of the expression?';
 const minNum = 1;
-const maxNum = 100;
+const maxNum = 10;
 
 function randomOperator() {
   const opindex = Math.random() * 3 + 1;

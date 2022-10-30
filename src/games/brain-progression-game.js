@@ -5,10 +5,7 @@ const minStep = 2;
 const maxStep = 10;
 const firstNumMin = 1;
 const firstNumMax = 50;
-const minIndex = 0;
-const maxIndex = 9;
 
-// a_n = a_1 + d * (n - 1) !!! или просто взять соответствующее число из ..
 const firstQuestion = 'What number is missing in the progression?';
 
 const makeProgression = () => {
@@ -31,12 +28,11 @@ const questionAnswer = () => {
     const progression = makeProgression();
     const missingNum = getRandomIndex(progression);
     const number = progression[missingNum];
-
     let numberOfRemove = 1;
     progression.splice(missingNum, numberOfRemove, '..');
     const correctAnswer = number;
     const expression = progression.join(' ');
-    console.log(correctAnswer);
+
     return [expression, correctAnswer];
 }
 

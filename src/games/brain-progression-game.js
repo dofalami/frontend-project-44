@@ -10,25 +10,27 @@ console.log(getRandomMin());
 
 // a_n = a_1 + d * (n - 1) !!! или просто взять соответствующее число из ..
 // 1. массив из рандом чисел до индекса 9, при этом числа идут в порядке прогрессии
-        const firstNum = getRandom();
-        const step = getRandomMin();
-
-        let progression = [];
-        progression.push(firstNum);
-
-        const progLength = 10;
-        let numOfProg = firstNum;
-
-        for (let i = 1; i != progLength; i = i + 1) {
-            numOfProg = numOfProg + step;
-            progression.push(numOfProg);
-        }
-        console.log(progression);
 
 const firstQuestion = 'What number is missing in the progression?';
 
 const questionAnswer = () => {
 //    const randomIndex = getRandomMin();
+
+    const firstNum = getRandom();
+    const step = getRandomMin();
+
+    let progression = [];
+    progression.push(firstNum);
+
+    const progLength = 10;
+    let numOfProg = firstNum;
+
+    for (let i = 1; i != progLength; i = i + 1) {
+        numOfProg = numOfProg + step;
+        progression.push(numOfProg);
+    }
+    console.log(progression);
+
     // ПЕРЕДЕЛАТЬ РАНДОМ ИНДЕКС (ОТ 0 ДО 9)
     let startIndex = getRandomMin();;
     let numberOfRemove = 1;

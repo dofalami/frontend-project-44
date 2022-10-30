@@ -29,15 +29,15 @@ const makeProgression = () => {
 
 const questionAnswer = () => {
     const progression = makeProgression();
-    const correctProgression = progression;
-    let startIndex = getRandomIndex(progression);
+//    const correctProgression = progression;
+    const missingNum = getRandomIndex(progression);
     let numberOfRemove = 1;
-    progression.splice(startIndex, numberOfRemove, '..');
+    progression.splice(missingNum, numberOfRemove, '..');
     const expression = progression.join(' ');
 
-    const correctAnswer = correctProgression[startIndex];
-    // const expectedAnswer = String(number);
-    // const question = progression.join(' ');
+    const number = progression[missingNum];
+    const correctAnswer = number;
+ // const expectedAnswer = String(number);
 
     return [expression, correctAnswer];
 }

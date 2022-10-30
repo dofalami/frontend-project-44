@@ -24,7 +24,6 @@ console.log(getRandomMin());
             progression.push(numOfProg);
         }
         console.log(progression);
-        return progression;
 
 const firstQuestion = 'What number is missing in the progression?';
 

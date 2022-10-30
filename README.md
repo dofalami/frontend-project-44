@@ -19,3 +19,7 @@
 ### 4. Brain Progression
 
 <a href="https://asciinema.org/a/533566" target="_blank"><img src="https://asciinema.org/a/533566.svg" /></a>
+
+### 5. Brain Prime
+
+<a href="https://asciinema.org/a/533587" target="_blank"><img src="https://asciinema.org/a/533587.svg" /></a>

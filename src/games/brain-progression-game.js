@@ -30,7 +30,7 @@ const makeProgression = () => {
 const questionAnswer = () => {
     const progression = makeProgression();
 //    const correctProgression = progression;
-    let startIndex = getRandomIndex(minIndex, maxIndex);
+    let startIndex = getRandomIndex();
     let numberOfRemove = 1;
     progression.splice(startIndex, numberOfRemove, '..');
     const expression = progression.join(' ');

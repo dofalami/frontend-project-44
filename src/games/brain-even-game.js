@@ -11,9 +11,9 @@ const questionAnswer = () => {
   const isEven = () => expression % 2 === 0;
   const correctAnswer = isEven() ? 'yes' : 'no';
 
-  return [expression, correctAnswer]; 
-}
+  return [expression, correctAnswer];
+};
 
 export default () => {
-  run (firstQuestion, questionAnswer);
-}
+  run(firstQuestion, questionAnswer);
+};

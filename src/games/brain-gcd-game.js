@@ -6,24 +6,28 @@ const minNum = 1;
 const maxNum = 100;
 
 const questionAnswer = () => {
-    const randomNumber1 = getRandom(minNum, maxNum);
-    const randomNumber2 = getRandom(minNum, maxNum);
-    const expression = randomNumber1 + ' ' + randomNumber2;
+  const randomNumber1 = getRandom(minNum, maxNum);
+  const randomNumber2 = getRandom(minNum, maxNum);
+  const expression = String(randomNumber1) + ' ' + String(randomNumber2);
 
-    let correctAnswer = '';
-    
-    if (randomNumber1 == 0) correctAnswer = randomNumber2;
+  let correctAnswer = '';
 
-    let a = randomNumber1;
-    let b = randomNumber2;
+  if (randomNumber1 === 0) correctAnswer = randomNumber2;
 
-    while (b != 0) {
-        if (a > b) a = a - b;
-        else b = b - a;
+  let a = randomNumber1;
+  let b = randomNumber2;
+
+  while (b !== 0) {
+    if (a > b) {
+      a = a - b;
     }
-    correctAnswer = a;
+    else {
+      b = b - a;
+    }
+  }
+  correctAnswer = a;
 
-    return [expression, correctAnswer];
+  return [expression, correctAnswer];
 }
 
 export default () => {

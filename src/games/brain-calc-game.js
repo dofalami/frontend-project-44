@@ -20,7 +20,7 @@ const calculate = (a, b, operator) => {
     default:
       return Error;
   }
-  };
+};
 
 const questionAnswer = () => {
   const number1 = getRandom(minNum, maxNum);

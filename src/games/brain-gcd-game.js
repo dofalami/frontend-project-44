@@ -19,17 +19,17 @@ const questionAnswer = () => {
 
   while (b !== 0) {
     if (a > b) {
-      a = a - b;
+      a -= b;
     }
     else {
-      b = b - a;
+      b -= a;
     }
   }
   correctAnswer = a;
 
   return [expression, correctAnswer];
-}
+};
 
 export default () => {
-    run (firstQuestion, questionAnswer);
-  }
+  run(firstQuestion, questionAnswer);
+};

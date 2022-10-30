@@ -9,33 +9,33 @@ const firstNumMax = 50;
 const firstQuestion = 'What number is missing in the progression?';
 
 const makeProgression = () => {
-    const firstNum = getRandom(firstNumMin, firstNumMax);
-    const step = getRandom(minStep, maxStep);
-    const progressionLength = 10;
+  const firstNum = getRandom(firstNumMin, firstNumMax);
+  const step = getRandom(minStep, maxStep);
+  const progressionLength = 10;
 
-    let progression = [];
-    progression.push(firstNum);
-    let numOfProgression = firstNum;
+  const progression = [];
+  progression.push(firstNum);
+  let numOfProgression = firstNum;
 
-    for (let i = 1; i != progressionLength; i = i + 1) {
-        numOfProgression = numOfProgression + step;
-        progression.push(numOfProgression);
-    }
-    return progression;
-}
+  for (let i = 1; i !== progressionLength; i += 1) {
+    numOfProgression += step;
+    progression.push(numOfProgression);
+  }
+  return progression;
+};
 
 const questionAnswer = () => {
-    const progression = makeProgression();
-    const missingNum = getRandomIndex(progression);
-    const number = progression[missingNum];
-    let numberOfRemove = 1;
-    progression.splice(missingNum, numberOfRemove, '..');
-    const correctAnswer = number;
-    const expression = progression.join(' ');
+  const progression = makeProgression();
+  const missingNum = getRandomIndex(progression);
+  const number = progression[missingNum];
+  const numberOfRemove = 1;
+  progression.splice(missingNum, numberOfRemove, '..');
+  const correctAnswer = number;
+  const expression = progression.join(' ');
 
-    return [expression, correctAnswer];
-}
+  return [expression, correctAnswer];
+};
 
 export default () => {
-    run (firstQuestion, questionAnswer);
-}
+  run(firstQuestion, questionAnswer);
+};

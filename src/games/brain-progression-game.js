@@ -32,7 +32,8 @@ const questionAnswer = () => {
     // ПЕРЕДЕЛАТЬ РАНДОМ ИНДЕКС (ОТ 0 ДО 9)
     let startIndex = getRandomMin();;
     let numberOfRemove = 1;
-    const expression = progression.splice(startIndex, numberOfRemove, '..');
+    let questionForUser = progression.splice(startIndex, numberOfRemove, '..');
+    const expression = questionForUser;
     const correctAnswer = 42;
 
     return [expression, correctAnswer];

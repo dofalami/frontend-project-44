@@ -7,9 +7,7 @@ const maxNum = 100;
 
 const questionAnswer = () => {
   const randomNumber = getRandom(minNum, maxNum);
-//  let expressionNum = String(randomNumber);
-//  const expression = expressionNum;
-  const expression =  String(randomNumber);
+  const expression = String(randomNumber);
   let correctAnswer = '';
   
   if (expression % 2 === 0) {

@@ -1,7 +1,9 @@
 import run from '../index.js';
-import getRandom from '../randomNum.js';
+import { getRandom } from '../randomNum.js';
 
 const firstQuestion = 'What is the result of the expression?';
+const minNum = 1;
+const maxNum = 100;
 
 function randomOperator() {
   const opindex = Math.random() * 3 + 1;
@@ -20,9 +22,9 @@ function randomOperator() {
 }
 
   const questionAnswer = () => {
-  const number1 = `${getRandom()}`;
-  const number2 = `${getRandom()}`;
-  const operator = `${randomOperator()}`;
+  const number1 = getRandom(minNum, maxNum);
+  const number2 = getRandom(minNum, maxNum);
+  const operator = randomOperator();
   const expression = number1 + ' ' + operator + ' ' + number2;
   const correctAnswer = eval(expression);
   return [expression, correctAnswer];

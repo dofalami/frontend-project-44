@@ -1,36 +1,34 @@
 import run from '../index.js';
-import { getRandom } from '../randomNum.js';
+import { getRandom, getRandomIndex } from '../randomNum.js';
 
 const firstQuestion = 'What is the result of the expression?';
-
+const operators = ['+', '-', '*'];
 const minNum = 1;
 const maxNum = 10;
 
-function randomOperator() {
-  const opindex = Math.random() * 3 + 1;
-  const result = Math.trunc(opindex);
+const calculate = (a, b, operator) => {
+  switch (operator) {
+    case '+':
+      return a + b;
 
-  switch (result) {
-    case 1:
-      return '+';
+    case '-':
+      return a - b;
 
-    case 2:
-      return '-';
-
-    case 3:
-      return '*';
+    case '*':
+      return a * b;
 
     default:
-      return false;
+      return Error;
   }
-}
+  };
 
 const questionAnswer = () => {
   const number1 = getRandom(minNum, maxNum);
   const number2 = getRandom(minNum, maxNum);
-  const operator = randomOperator();
-  const expression = String(number1) + ' ' + String(operator) + ' ' + String(number2);
-  const correctAnswer = expression.calculate(number1, operator, number2);
+  const index = getRandomIndex(operators);
+  const operator = operators[index];
+  const expression = `${number1} ${operator} ${number2}`;
+  const correctAnswer = String(calculate(number1, number2, operator));
 
   return [expression, correctAnswer];
 };

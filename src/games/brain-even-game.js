@@ -1,11 +1,11 @@
 import run from '../index.js';
-import getRandom from '../randomNum.js';
+import { getRandom } from '../randomNum.js';
 
 const firstQuestion = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const questionAnswer = () => {
   const randomNumber = getRandom();
-  const expression = eval(randomNumber);
+  const expression = String(randomNumber);
   let correctAnswer = '';
   
   if (expression % 2 === 0) {

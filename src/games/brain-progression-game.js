@@ -29,12 +29,13 @@ const makeProgression = () => {
 
 const questionAnswer = () => {
     const progression = makeProgression();
-//    const correctProgression = progression;
+    const correctProgression = progression;
     let startIndex = getRandomIndex(progression);
     let numberOfRemove = 1;
     progression.splice(startIndex, numberOfRemove, '..');
     const expression = progression.join(' ');
-    const correctAnswer = 42;
+
+    const correctAnswer = correctProgression[startIndex];
     // const expectedAnswer = String(number);
     // const question = progression.join(' ');
 

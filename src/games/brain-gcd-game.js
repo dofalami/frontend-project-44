@@ -8,7 +8,7 @@ const maxNum = 100;
 const questionAnswer = () => {
   const randomNumber1 = getRandom(minNum, maxNum);
   const randomNumber2 = getRandom(minNum, maxNum);
-  const expression = String(randomNumber1) + ' ' + String(randomNumber2);
+  const expression = String(`${andomNumber1}`) + ' ' + String(`${andomNumber1}`);
 
   let correctAnswer = '';
 
@@ -18,12 +18,8 @@ const questionAnswer = () => {
   let b = randomNumber2;
 
   while (b !== 0) {
-    if (a > b) {
-      a -= b;
-    }
-    else {
-      b -= a;
-    }
+    if (a > b) a -= b;
+    else b -= a;
   }
   correctAnswer = String(a);
 

@@ -30,7 +30,7 @@ const questionAnswer = () => {
   const number2 = getRandom(minNum, maxNum);
   const operator = randomOperator();
   const expression = String(number1) + ' ' + String(operator) + ' ' + String(number2);
-  const correctAnswer = String(calculate(number1, number2, operator));
+  const correctAnswer = calculate(number1, number2, operator);
 
   return [expression, correctAnswer];
 };

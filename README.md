@@ -15,3 +15,7 @@
 ### 3. Brain gcd
 
 <a href="https://asciinema.org/a/532347" target="_blank"><img src="https://asciinema.org/a/532347.svg" /></a>
+
+### 4. Brain Progression
+
+<a href="https://asciinema.org/a/533566" target="_blank"><img src="https://asciinema.org/a/533566.svg" /></a>

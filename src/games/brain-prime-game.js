@@ -21,7 +21,7 @@ const questionAnswer = () => {
     const randomNumber = getRandom(minNum, maxNum);
     const expression = String(randomNumber);
     const correctAnswer = prime(randomNumber) ? 'yes' : 'no';
-    console.log(correctAnswer);
+
     return [expression, correctAnswer];
 }
 

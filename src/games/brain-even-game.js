@@ -8,15 +8,8 @@ const maxNum = 100;
 const questionAnswer = () => {
   const randomNumber = getRandom(minNum, maxNum);
   const expression = String(randomNumber);
-  let correctAnswer = '';
-  
-  if (expression % 2 === 0) {
-    correctAnswer = 'yes';
-  }
-
-  if (expression % 2 === 1) {
-    correctAnswer = 'no';
-  }
+  const even = () => expression % 2 === 0;
+  const correctAnswer = even() ? 'yes' : 'no';
 
   return [expression, correctAnswer]; 
 }

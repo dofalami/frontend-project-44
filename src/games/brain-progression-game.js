@@ -11,15 +11,15 @@ const firstQuestion = 'What number is missing in the progression?';
 const makeProgression = () => {
     const firstNum = getRandom(firstNumMin, firstNumMax);
     const step = getRandom(minStep, maxStep);
-    const progLength = 10;
+    const progressionLength = 10;
 
     let progression = [];
     progression.push(firstNum);
-    let numOfProg = firstNum;
+    let numOfProgression = firstNum;
 
-    for (let i = 1; i != progLength; i = i + 1) {
-        numOfProg = numOfProg + step;
-        progression.push(numOfProg);
+    for (let i = 1; i != progressionLength; i = i + 1) {
+        numOfProgression = numOfProgression + step;
+        progression.push(numOfProgression);
     }
     return progression;
 }

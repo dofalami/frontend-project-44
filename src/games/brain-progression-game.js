@@ -30,7 +30,7 @@ const questionAnswer = () => {
   const number = progression[missingNum];
   const numberOfRemove = 1;
   progression.splice(missingNum, numberOfRemove, '..');
-  const correctAnswer = number;
+  const correctAnswer = String(number);
   const expression = progression.join(' ');
 
   return [expression, correctAnswer];

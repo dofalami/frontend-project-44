@@ -36,7 +36,7 @@ const questionAnswer = () => {
     const expression = progression.join(' ');
 
     const number = progression[missingNum];
-    const correctAnswer = number;
+    const correctAnswer = String(number);
  // const expectedAnswer = String(number);
 
     return [expression, correctAnswer];

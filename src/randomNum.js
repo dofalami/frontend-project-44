@@ -1,5 +1,5 @@
-export default function getRandom() {
-    const random = Math.random() * 100;
-    const getRandom = Math.trunc(random);
-    return getRandom;
-  }
+const getRandom = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+
+const getRandomIndex = (numbers) => getRandomNumber(0, numbers.length);
+
+export { getRandom, getRandomIndex };

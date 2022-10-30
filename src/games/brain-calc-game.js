@@ -25,15 +25,15 @@ function randomOperator() {
   }
 }
 
-  const questionAnswer = () => {
+const questionAnswer = () => {
   const number1 = getRandom(minNum, maxNum);
   const number2 = getRandom(minNum, maxNum);
   const operator = randomOperator();
-  const expression = number1 + ' ' + operator + ' ' + number2;
-  const correctAnswer = eval(expression);
+  const expression = String(number1) + ' ' + String(operator) + ' ' + String(number2);
+  const correctAnswer = number1 + number2;
 
   return [expression, correctAnswer];
-  }
+}
 
   export default () => {
     run (firstQuestion, questionAnswer);

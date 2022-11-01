@@ -17,15 +17,17 @@
 ## How to install
 Make sure you have installed Node.js **version 13 or higher.**
 
-**Clone repo:
+**Clone repo:**
 ```
 git clone git@github.com:pollyleyka/frontend-project-lvl1.git
 ```
-Change directory:
+
+**Change directory:**
 ```
 cd frontend-project-lvl1
 ```
-Install packages**
+
+**Install packages**
 ```
 npm install
 ```

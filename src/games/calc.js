@@ -1,5 +1,5 @@
 import run from '../index.js';
-import { getRandomNum, data } from '../helpers.js';
+import { getRandomNum, getData } from '../helpers.js';
 
 const firstQuestion = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
@@ -22,10 +22,10 @@ const calculate = (a, b, operator) => {
   }
 };
 
-const questionAnswer = () => {
+const GetQuestionAnswer = () => {
   const number1 = getRandomNum(minNum, maxNum);
   const number2 = getRandomNum(minNum, maxNum);
-  const index = data(operators);
+  const index = getData(operators);
   const operator = operators[index];
   const expression = `${number1} ${operator} ${number2}`;
   const correctAnswer = String(calculate(number1, number2, operator));
@@ -34,5 +34,5 @@ const questionAnswer = () => {
 };
 
 export default () => {
-  run(firstQuestion, questionAnswer);
+  run(firstQuestion, GetQuestionAnswer);
 };

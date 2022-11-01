@@ -17,7 +17,7 @@ const isPrime = (number) => {
   return true;
 };
 
-const questionAnswer = () => {
+const GetQuestionAnswer = () => {
   const randomNumber = getRandomNum(minNum, maxNum);
   const expression = String(randomNumber);
   const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
@@ -26,5 +26,5 @@ const questionAnswer = () => {
 };
 
 export default () => {
-  run(firstQuestion, questionAnswer);
+  run(firstQuestion, GetQuestionAnswer);
 };

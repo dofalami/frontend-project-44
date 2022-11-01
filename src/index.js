@@ -1,7 +1,7 @@
 // логика игр
 import readlineSync from 'readline-sync';
 
-export default (firstQuestion, questionAnswer) => {
+export default (firstQuestion, GetQuestionAnswer) => {
   console.log('Welcome to the Brain Games!');
 
   const userName = readlineSync.question('May I have your name? ');
@@ -11,7 +11,7 @@ export default (firstQuestion, questionAnswer) => {
   const numberOfRounds = 3;
   let i = 0;
   while (i < numberOfRounds) {
-    const [expression, correctAnswer] = questionAnswer();
+    const [expression, correctAnswer] = GetQuestionAnswer();
 
     console.log(`Question: ${expression}`);
     const userAnswer = readlineSync.question('Your answer: ');
@@ -29,5 +29,5 @@ export default (firstQuestion, questionAnswer) => {
     return true;
   }
 
-  return [firstQuestion, questionAnswer];
+  return [firstQuestion, GetQuestionAnswer];
 };

@@ -5,7 +5,7 @@ const firstQuestion = 'Find the greatest common divisor of given numbers.';
 const minNum = 1;
 const maxNum = 100;
 
-const questionAnswer = () => {
+const GetQuestionAnswer = () => {
   const randomNumber1 = getRandomNum(minNum, maxNum);
   const randomNumber2 = getRandomNum(minNum, maxNum);
   const expression = `${randomNumber1} ${randomNumber2}`;
@@ -27,5 +27,5 @@ const questionAnswer = () => {
 };
 
 export default () => {
-  run(firstQuestion, questionAnswer);
+  run(firstQuestion, GetQuestionAnswer);
 };

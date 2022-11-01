@@ -1,5 +1,5 @@
 import run from '../index.js';
-import { getRandomNum, data } from '../helpers.js';
+import { getRandomNum, getData } from '../helpers.js';
 
 const minStep = 2;
 const maxStep = 10;
@@ -24,9 +24,9 @@ const makeProgression = () => {
   return progression;
 };
 
-const questionAnswer = () => {
+const GetQuestionAnswer = () => {
   const progression = makeProgression();
-  const missingNum = data(progression);
+  const missingNum = getData(progression);
   const number = progression[missingNum];
   const numberOfRemove = 1;
   progression.splice(missingNum, numberOfRemove, '..');
@@ -37,5 +37,5 @@ const questionAnswer = () => {
 };
 
 export default () => {
-  run(firstQuestion, questionAnswer);
+  run(firstQuestion, GetQuestionAnswer);
 };

@@ -5,7 +5,7 @@ const firstQuestion = 'Answer "yes" if the number is even, otherwise answer "no"
 const minNum = 1;
 const maxNum = 100;
 
-const questionAnswer = () => {
+const GetQuestionAnswer = () => {
   const randomNumber = getRandomNum(minNum, maxNum);
   const expression = String(randomNumber);
   const isEven = () => expression % 2 === 0;
@@ -15,5 +15,5 @@ const questionAnswer = () => {
 };
 
 export default () => {
-  run(firstQuestion, questionAnswer);
+  run(firstQuestion, GetQuestionAnswer);
 };

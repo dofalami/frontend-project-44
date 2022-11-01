@@ -1,5 +1,5 @@
 import run from '../index.js';
-import { getRandom, getRandomIndex } from '../helpers.js';
+import { getRandomNum, data } from '../helpers.js';
 
 const minStep = 2;
 const maxStep = 10;
@@ -9,8 +9,8 @@ const firstNumMax = 50;
 const firstQuestion = 'What number is missing in the progression?';
 
 const makeProgression = () => {
-  const firstNum = getRandom(firstNumMin, firstNumMax);
-  const step = getRandom(minStep, maxStep);
+  const firstNum = getRandomNum(firstNumMin, firstNumMax);
+  const step = getRandomNum(minStep, maxStep);
   const progressionLength = 10;
 
   const progression = [];
@@ -26,7 +26,7 @@ const makeProgression = () => {
 
 const questionAnswer = () => {
   const progression = makeProgression();
-  const missingNum = getRandomIndex(progression);
+  const missingNum = data(progression);
   const number = progression[missingNum];
   const numberOfRemove = 1;
   progression.splice(missingNum, numberOfRemove, '..');

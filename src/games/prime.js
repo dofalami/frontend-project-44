@@ -1,5 +1,5 @@
 import run from '../index.js';
-import { getRandom } from '../helpers.js';
+import { getRandomNum } from '../helpers.js';
 
 const firstQuestion = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const minNum = 1;
@@ -18,7 +18,7 @@ const isPrime = (number) => {
 };
 
 const questionAnswer = () => {
-  const randomNumber = getRandom(minNum, maxNum);
+  const randomNumber = getRandomNum(minNum, maxNum);
   const expression = String(randomNumber);
   const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
 

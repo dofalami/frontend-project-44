@@ -1,5 +1,5 @@
 import run from '../index.js';
-import { getRandom } from '../randomNum.js';
+import { getRandom } from '../helpers.js';
 
 const firstQuestion = 'Answer "yes" if the number is even, otherwise answer "no".';
 const minNum = 1;

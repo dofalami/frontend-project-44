@@ -1,5 +1,5 @@
 import run from '../index.js';
-import { getRandom, getRandomIndex } from '../randomNum.js';
+import { getRandom, getRandomIndex } from '../helpers.js';
 
 const minStep = 2;
 const maxStep = 10;

@@ -1,5 +1,5 @@
 import run from '../index.js';
-import { getRandom } from '../randomNum.js';
+import { getRandom } from '../helpers.js';
 
 const firstQuestion = 'Find the greatest common divisor of given numbers.';
 const minNum = 1;

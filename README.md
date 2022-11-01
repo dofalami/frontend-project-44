@@ -27,7 +27,7 @@ git clone git@github.com:pollyleyka/frontend-project-lvl1.git
 cd frontend-project-lvl1
 ```
 
-**Install packages**
+**Install packages:**
 ```
 npm install
 ```

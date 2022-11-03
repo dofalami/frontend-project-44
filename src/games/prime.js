@@ -1,7 +1,7 @@
 import run from '../index.js';
 import { getRandomNumber } from '../helpers.js';
 
-const firstQuestion = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const minNum = 1;
 const maxNum = 100;
 
@@ -17,7 +17,7 @@ const isPrime = (number) => {
   return true;
 };
 
-const GetQuestionAnswer = () => {
+const genearateRound = () => {
   const randomNumber = getRandomNumber(minNum, maxNum);
   const expression = String(randomNumber);
   const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
@@ -26,5 +26,5 @@ const GetQuestionAnswer = () => {
 };
 
 export default () => {
-  run(firstQuestion, GetQuestionAnswer);
+  run(description, genearateRound);
 };

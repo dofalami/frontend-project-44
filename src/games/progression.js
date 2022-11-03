@@ -6,7 +6,7 @@ const maxStep = 10;
 const firstNumMin = 1;
 const firstNumMax = 50;
 
-const firstQuestion = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const makeProgression = () => {
   const firstNum = getRandomNumber(firstNumMin, firstNumMax);
@@ -24,7 +24,7 @@ const makeProgression = () => {
   return progression;
 };
 
-const GetQuestionAnswer = () => {
+const genearateRound = () => {
   const progression = makeProgression();
   const missingNum = getRandomIndex(progression);
   const number = progression[missingNum];
@@ -37,5 +37,5 @@ const GetQuestionAnswer = () => {
 };
 
 export default () => {
-  run(firstQuestion, GetQuestionAnswer);
+  run(description, genearateRound);
 };

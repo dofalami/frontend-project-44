@@ -1,11 +1,11 @@
 import run from '../index.js';
 import { getRandomNumber } from '../helpers.js';
 
-const firstQuestion = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 const minNum = 1;
 const maxNum = 100;
 
-const GetQuestionAnswer = () => {
+const genearateRound = () => {
   const randomNumber1 = getRandomNumber(minNum, maxNum);
   const randomNumber2 = getRandomNumber(minNum, maxNum);
   const expression = `${randomNumber1} ${randomNumber2}`;
@@ -27,5 +27,5 @@ const GetQuestionAnswer = () => {
 };
 
 export default () => {
-  run(firstQuestion, GetQuestionAnswer);
+  run(description, genearateRound);
 };

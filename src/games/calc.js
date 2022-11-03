@@ -1,7 +1,7 @@
 import run from '../index.js';
 import { getRandomNumber, getRandomIndex } from '../helpers.js';
 
-const firstQuestion = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 const minNum = 1;
 const maxNum = 10;
@@ -22,7 +22,7 @@ const calculate = (a, b, operator) => {
   }
 };
 
-const GetQuestionAnswer = () => {
+const genearateRound = () => {
   const number1 = getRandomNumber(minNum, maxNum);
   const number2 = getRandomNumber(minNum, maxNum);
   const index = getRandomIndex(operators);
@@ -34,5 +34,5 @@ const GetQuestionAnswer = () => {
 };
 
 export default () => {
-  run(firstQuestion, GetQuestionAnswer);
+  run(description, genearateRound);
 };

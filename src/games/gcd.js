@@ -1,13 +1,13 @@
 import run from '../index.js';
-import { getRandomNum } from '../helpers.js';
+import { getRandomNumber } from '../helpers.js';
 
 const firstQuestion = 'Find the greatest common divisor of given numbers.';
 const minNum = 1;
 const maxNum = 100;
 
 const GetQuestionAnswer = () => {
-  const randomNumber1 = getRandomNum(minNum, maxNum);
-  const randomNumber2 = getRandomNum(minNum, maxNum);
+  const randomNumber1 = getRandomNumber(minNum, maxNum);
+  const randomNumber2 = getRandomNumber(minNum, maxNum);
   const expression = `${randomNumber1} ${randomNumber2}`;
 
   let correctAnswer = '';

@@ -1,12 +1,12 @@
 import run from '../index.js';
-import { getRandomNum } from '../helpers.js';
+import { getRandomNumber } from '../helpers.js';
 
 const firstQuestion = 'Answer "yes" if the number is even, otherwise answer "no".';
 const minNum = 1;
 const maxNum = 100;
 
 const GetQuestionAnswer = () => {
-  const randomNumber = getRandomNum(minNum, maxNum);
+  const randomNumber = getRandomNumber(minNum, maxNum);
   const expression = String(randomNumber);
   const isEven = () => expression % 2 === 0;
   const correctAnswer = isEven() ? 'yes' : 'no';

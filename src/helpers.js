@@ -1,9 +1,12 @@
-const getRandomNum = (min, max) => {
-  const minNum = Math.ceil(min);
-  const maxNum = Math.floor(max);
-  return Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
+const getRandomNumber = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
-const getData = (numbers) => getRandomNum(0, numbers.length - 1);
+// const getRandomIndex = (data) => getRandomNumber(0, data.length - 1);
+const getRandomIndex = (data) => {
+  const min = 0;
+  const max = data.length - 1;
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
 
-export { getRandomNum, getData };
+export { getRandomNumber, getRandomIndex };

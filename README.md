@@ -15,7 +15,7 @@
 5. Brain prime: determining prime number.
 
 ## How to install
-Make sure you have installed Node.js **version 13 or higher.**
+Make sure you have installed Node.js **version 13.2 or higher.**
 
 **Clone repo:**
 ```

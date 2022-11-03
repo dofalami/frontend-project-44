@@ -21,7 +21,7 @@ export default (description, generateRound) => {
 
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${userName}!`);
-      return false;
+//      return false;
     }
   }
   console.log(`Congratulations, ${userName}!`);

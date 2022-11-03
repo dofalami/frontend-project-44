@@ -17,7 +17,7 @@ const isPrime = (number) => {
   return true;
 };
 
-const genearateRound = () => {
+const generateRound = () => {
   const randomNumber = getRandomNumber(minNum, maxNum);
   const expression = String(randomNumber);
   const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
@@ -26,5 +26,5 @@ const genearateRound = () => {
 };
 
 export default () => {
-  run(description, genearateRound);
+  run(description, generateRound);
 };

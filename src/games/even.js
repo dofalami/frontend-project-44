@@ -5,7 +5,7 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 const minNum = 1;
 const maxNum = 100;
 
-const genearateRound = () => {
+const generateRound = () => {
   const randomNumber = getRandomNumber(minNum, maxNum);
   const expression = String(randomNumber);
   const isEven = () => expression % 2 === 0;
@@ -15,5 +15,5 @@ const genearateRound = () => {
 };
 
 export default () => {
-  run(description, genearateRound);
+  run(description, generateRound);
 };

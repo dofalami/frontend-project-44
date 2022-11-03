@@ -1,17 +1,17 @@
-// логика игр
 import readlineSync from 'readline-sync';
+const numberOfRounds = 3;
+export default (description, generateRound) => {
+//  const numberOfRounds = 3;
 
-export default (description, genearateRound) => {
   console.log('Welcome to the Brain Games!');
 
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(description);
 
-  const numberOfRounds = 3;
   let i = 0;
   while (i < numberOfRounds) {
-    const [expression, correctAnswer] = genearateRound();
+    const [expression, correctAnswer] = generateRound();
 
     console.log(`Question: ${expression}`);
     const userAnswer = readlineSync.question('Your answer: ');
@@ -29,5 +29,5 @@ export default (description, genearateRound) => {
     return true;
   }
 
-  return [description, genearateRound];
+  return [description, generateRound];
 };

@@ -22,7 +22,7 @@ const calculate = (a, b, operator) => {
   }
 };
 
-const genearateRound = () => {
+const generateRound = () => {
   const number1 = getRandomNumber(minNum, maxNum);
   const number2 = getRandomNumber(minNum, maxNum);
   const index = getRandomIndex(operators);
@@ -34,5 +34,5 @@ const genearateRound = () => {
 };
 
 export default () => {
-  run(description, genearateRound);
+  run(description, generateRound);
 };

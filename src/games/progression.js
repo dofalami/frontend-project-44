@@ -24,7 +24,7 @@ const makeProgression = () => {
   return progression;
 };
 
-const genearateRound = () => {
+const generateRound = () => {
   const progression = makeProgression();
   const missingNum = getRandomIndex(progression);
   const number = progression[missingNum];
@@ -37,5 +37,5 @@ const genearateRound = () => {
 };
 
 export default () => {
-  run(description, genearateRound);
+  run(description, generateRound);
 };

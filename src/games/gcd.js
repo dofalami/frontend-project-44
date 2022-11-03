@@ -5,7 +5,7 @@ const description = 'Find the greatest common divisor of given numbers.';
 const minNum = 1;
 const maxNum = 100;
 
-const genearateRound = () => {
+const generateRound = () => {
   const randomNumber1 = getRandomNumber(minNum, maxNum);
   const randomNumber2 = getRandomNumber(minNum, maxNum);
   const expression = `${randomNumber1} ${randomNumber2}`;
@@ -27,5 +27,5 @@ const genearateRound = () => {
 };
 
 export default () => {
-  run(description, genearateRound);
+  run(description, generateRound);
 };

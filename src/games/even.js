@@ -8,7 +8,7 @@ const maxNum = 100;
 const generateRound = () => {
   const randomNumber = getRandomNumber(minNum, maxNum);
   const question = String(randomNumber);
-  const isEven = () => expression % 2 === 0;
+  const isEven = () => question % 2 === 0;
   const correctAnswer = isEven() ? 'yes' : 'no';
 
   return [question, correctAnswer];

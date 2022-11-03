@@ -11,7 +11,7 @@ export default (description, generateRound) => {
   console.log(description);
 
   let i = 0;
-  for (let i = 0; i < roundsCount; i += 1;) {
+  for (let i = 0; i < roundsCount; i += 1) {
     const [expression, correctAnswer] = generateRound();
 
     console.log(`Question: ${expression}`);

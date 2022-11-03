@@ -5,21 +5,21 @@ const minStep = 2;
 const maxStep = 10;
 const firstNumMin = 1;
 const firstNumMax = 50;
+const progressionLength = 10;
 
 const description = 'What number is missing in the progression?';
 
 const makeProgression = () => {
   const firstNum = getRandomNumber(firstNumMin, firstNumMax);
   const step = getRandomNumber(minStep, maxStep);
-  const progressionLength = 10;
 
   const progression = [];
   progression.push(firstNum);
-  let numOfProgression = firstNum;
+  let progressionCount = firstNum;
 
   for (let i = 1; i !== progressionLength; i += 1) {
-    numOfProgression += step;
-    progression.push(numOfProgression);
+    progressionCount += step;
+    progression.push(progressionCount);
   }
   return progression;
 };
@@ -28,8 +28,8 @@ const generateRound = () => {
   const progression = makeProgression();
   const missingNum = getRandomIndex(progression);
   const number = progression[missingNum];
-  const numberOfRemove = 1;
-  progression.splice(missingNum, numberOfRemove, '..');
+  const removedNumbers = 1;
+  progression.splice(missingNum, removedNumbers, '..');
   const correctAnswer = String(number);
   const expression = progression.join(' ');
 

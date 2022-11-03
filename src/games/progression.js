@@ -31,9 +31,9 @@ const generateRound = () => {
   const removedNumbers = 1;
   progression.splice(missingNum, removedNumbers, '..');
   const correctAnswer = String(number);
-  const expression = progression.join(' ');
+  const question = progression.join(' ');
 
-  return [expression, correctAnswer];
+  return [question, correctAnswer];
 };
 
 export default () => {

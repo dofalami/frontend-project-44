@@ -11,9 +11,9 @@ export default (description, generateRound) => {
   console.log(description);
 
   for (let i = 0; i < roundsCount; i += 1) {
-    const [expression, correctAnswer] = generateRound();
+    const [question, correctAnswer] = generateRound();
 
-    console.log(`Question: ${expression}`);
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer === correctAnswer) {

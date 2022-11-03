@@ -7,11 +7,11 @@ const maxNum = 100;
 
 const generateRound = () => {
   const randomNumber = getRandomNumber(minNum, maxNum);
-  const expression = String(randomNumber);
+  const question = String(randomNumber);
   const isEven = () => expression % 2 === 0;
   const correctAnswer = isEven() ? 'yes' : 'no';
 
-  return [expression, correctAnswer];
+  return [question, correctAnswer];
 };
 
 export default () => {

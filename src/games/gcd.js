@@ -8,7 +8,7 @@ const maxNum = 100;
 const generateRound = () => {
   const randomNumber1 = getRandomNumber(minNum, maxNum);
   const randomNumber2 = getRandomNumber(minNum, maxNum);
-  const expression = `${randomNumber1} ${randomNumber2}`;
+  const question = `${randomNumber1} ${randomNumber2}`;
 
   let correctAnswer = '';
 
@@ -23,7 +23,7 @@ const generateRound = () => {
   }
   correctAnswer = String(a);
 
-  return [expression, correctAnswer];
+  return [question, correctAnswer];
 };
 
 export default () => {

@@ -27,10 +27,10 @@ const generateRound = () => {
   const number2 = getRandomNumber(minNum, maxNum);
   const index = getRandomIndex(operators);
   const operator = operators[index];
-  const expression = `${number1} ${operator} ${number2}`;
+  const question = `${number1} ${operator} ${number2}`;
   const correctAnswer = String(calculate(number1, number2, operator));
 
-  return [expression, correctAnswer];
+  return [question, correctAnswer];
 };
 
 export default () => {

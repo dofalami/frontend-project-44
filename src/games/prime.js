@@ -19,10 +19,10 @@ const isPrime = (number) => {
 
 const generateRound = () => {
   const randomNumber = getRandomNumber(minNum, maxNum);
-  const expression = String(randomNumber);
+  const question = String(randomNumber);
   const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
 
-  return [expression, correctAnswer];
+  return [question, correctAnswer];
 };
 
 export default () => {

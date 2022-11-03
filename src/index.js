@@ -10,7 +10,6 @@ export default (description, generateRound) => {
   console.log(`Hello, ${userName}!`);
   console.log(description);
 
-  let i = 0;
   for (let i = 0; i < roundsCount; i += 1) {
     const [expression, correctAnswer] = generateRound();
 
@@ -25,9 +24,7 @@ export default (description, generateRound) => {
       return false;
     }
   }
-//  if (i >= 3) {
-    console.log(`Congratulations, ${userName}!`);
-    return true;
+  console.log(`Congratulations, ${userName}!`);
 
   return [description, generateRound];
 };

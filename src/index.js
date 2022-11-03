@@ -28,7 +28,6 @@ export default (description, generateRound) => {
 //  if (i >= 3) {
     console.log(`Congratulations, ${userName}!`);
     return true;
-  }
 
   return [description, generateRound];
 };

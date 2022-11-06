@@ -6,8 +6,8 @@ const minRange = 1;
 const maxRange = 100;
 
 const generateRound = () => {
-  const randomNumber = getRandomNumber(minRange, maxRange);
-  const question = String(randomNumber);
+  const number = getRandomNumber(minRange, maxRange);
+  const question = String(number);
   const isEven = () => question % 2 === 0;
   const correctAnswer = isEven() ? 'yes' : 'no';
 

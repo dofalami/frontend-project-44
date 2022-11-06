@@ -13,9 +13,6 @@ const generateRound = () => {
   const number1 = getRandomNumber(minRange, maxRange);
   const number2 = getRandomNumber(minRange, maxRange);
   const question = `${number1} ${number2}`;
-
-//  let correctAnswer = '';
-//  if (number1 === 0) correctAnswer = number2;
   const correctAnswer = String(gcd(number1, number2));
 
   return [question, correctAnswer];

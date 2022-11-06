@@ -9,10 +9,7 @@ const lengthLimit = 10;
 
 const description = 'What number is missing in the progression?';
 
-const makeProgression = () => {
-  const firstNum = getRandomNumber(minFirst, maxFirst);
-  const step = getRandomNumber(minStep, maxStep);
-
+const makeProgression = (firstNum, step) => {
   const progression = [];
   progression.push(firstNum);
   let progressionCount = firstNum;
@@ -25,7 +22,9 @@ const makeProgression = () => {
 };
 
 const generateRound = () => {
-  const progression = makeProgression();
+  const firstNum = getRandomNumber(minFirst, maxFirst);
+  const step = getRandomNumber(minStep, maxStep);
+  const progression = makeProgression(firstNum, step);
   const missingNum = getRandomIndex(progression);
   const number = progression[missingNum];
   const removedNumbers = 1;

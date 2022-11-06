@@ -5,7 +5,7 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 const minRange = 1;
 const maxRange = 100;
 
-const number = getRandomNumber(minRange, maxRange);
+let number = getRandomNumber(minRange, maxRange);
 const isEven = () => number % 2 === 0;
 
 const generateRound = () => {

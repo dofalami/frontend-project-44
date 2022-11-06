@@ -11,7 +11,7 @@ const generateRound = () => {
   const number = getRandomNumber(minRange, maxRange);
 //  const isEven = () => number % 2 === 0;
   const question = String(number);
-  const correctAnswer = isEven() ? 'yes' : 'no';
+  const correctAnswer = isEven(number) ? 'yes' : 'no';
 
   return [question, correctAnswer];
 };

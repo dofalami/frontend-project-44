@@ -7,11 +7,8 @@ const maxRange = 100;
 const number1 = getRandomNumber(minRange, maxRange);
 const number2 = getRandomNumber(minRange, maxRange);
 
-let a = number1;
-let b = number2;
-
-const gcd = (a, b) => {
-  return b ? gcd(b, a % b) : a;
+const gcd = (number1, number2) => {
+  return b ? gcd(number2, number1 % number2) : number1;
 };
 
 const generateRound = () => {

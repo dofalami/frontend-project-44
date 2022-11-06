@@ -11,11 +11,8 @@ const description = 'What number is missing in the progression?';
 
 const makeProgression = (firstNum, step) => {
   const progression = [];
-//  progression.push(firstNum);
-//  let progressionCount = firstNum;
 
   for (let i = 1; i !== lengthLimit; i += 1) {
-//    firstNum += step;
     progression.push(firstNum + (step * i));
   }
   return progression;
@@ -25,13 +22,12 @@ const generateRound = () => {
   const firstNum = getRandomNumber(minFirst, maxFirst);
   const step = getRandomNumber(minStep, maxStep);
   const progression = makeProgression(firstNum, step);
-  const missingNum = getRandomIndex(progression);
-  const number = progression[missingNum];
-  const removedNumbers = 1;
-  progression.splice(missingNum, removedNumbers, '..');
-  const correctAnswer = String(number);
+  const hiddenIndex = getRandomIndex(progression);
+//  const number = progression[hiddenIndex];
+  progression.splice(hiddenIndex, 1, '..');
+  const correctAnswer = String(progression[hiddenIndex]);
   const question = progression.join(' ');
-  console.log(correctAnswer);
+
   return [question, correctAnswer];
 };
 

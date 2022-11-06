@@ -23,9 +23,9 @@ const generateRound = () => {
   const step = getRandomNumber(minStep, maxStep);
   const progression = makeProgression(firstNum, step);
   const hiddenIndex = getRandomIndex(progression);
-//  const number = progression[hiddenIndex];
+  const number = progression[hiddenIndex];
   progression.splice(hiddenIndex, 1, '..');
-  const correctAnswer = String(progression[hiddenIndex]);
+  const correctAnswer = String(number);
   const question = progression.join(' ');
 
   return [question, correctAnswer];

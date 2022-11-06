@@ -18,7 +18,7 @@ const generateRound = () => {
 
 //  let correctAnswer = '';
 //  if (number1 === 0) correctAnswer = number2;
-  const correctAnswer = String(gcd(number1, number2));
+  const correctAnswer = gcd(number1, number2);
 
   return [question, correctAnswer];
 };

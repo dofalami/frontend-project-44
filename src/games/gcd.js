@@ -2,12 +2,12 @@ import run from '../index.js';
 import { getRandomNumber } from '../helpers.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
-const minNum = 1;
-const maxNum = 100;
+const minRange = 1;
+const maxRange = 100;
 
 const generateRound = () => {
-  const randomNumber1 = getRandomNumber(minNum, maxNum);
-  const randomNumber2 = getRandomNumber(minNum, maxNum);
+  const randomNumber1 = getRandomNumber(minRange, maxRange);
+  const randomNumber2 = getRandomNumber(minRange, maxRange);
   const question = `${randomNumber1} ${randomNumber2}`;
 
   let correctAnswer = '';

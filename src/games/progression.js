@@ -3,21 +3,21 @@ import { getRandomNumber, getRandomIndex } from '../helpers.js';
 
 const minStep = 2;
 const maxStep = 10;
-const firstNumMin = 1;
-const firstNumMax = 50;
-const progressionLength = 10;
+const minFirst = 1;
+const maxFirst = 50;
+const lengthLimit = 10;
 
 const description = 'What number is missing in the progression?';
 
 const makeProgression = () => {
-  const firstNum = getRandomNumber(firstNumMin, firstNumMax);
+  const firstNum = getRandomNumber(minFirst, maxFirst);
   const step = getRandomNumber(minStep, maxStep);
 
   const progression = [];
   progression.push(firstNum);
   let progressionCount = firstNum;
 
-  for (let i = 1; i !== progressionLength; i += 1) {
+  for (let i = 1; i !== lengthLimit; i += 1) {
     progressionCount += step;
     progression.push(progressionCount);
   }

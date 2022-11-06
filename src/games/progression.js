@@ -16,7 +16,7 @@ const makeProgression = (firstNum, step) => {
 
   for (let i = 1; i !== lengthLimit; i += 1) {
 //    firstNum += step;
-    progression.push(firstNum + (step *i));
+    progression.push(firstNum + (step * i));
   }
   return progression;
 };
@@ -31,7 +31,7 @@ const generateRound = () => {
   progression.splice(missingNum, removedNumbers, '..');
   const correctAnswer = String(number);
   const question = progression.join(' ');
-
+  console.log(correctAnswer);
   return [question, correctAnswer];
 };
 

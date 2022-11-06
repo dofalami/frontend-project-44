@@ -11,12 +11,12 @@ const description = 'What number is missing in the progression?';
 
 const makeProgression = (firstNum, step) => {
   const progression = [];
-  progression.push(firstNum);
-  let progressionCount = firstNum;
+//  progression.push(firstNum);
+//  let progressionCount = firstNum;
 
   for (let i = 1; i !== lengthLimit; i += 1) {
-    progressionCount += step;
-    progression.push(progressionCount);
+//    firstNum += step;
+    progression.push(firstNum + (step *i));
   }
   return progression;
 };

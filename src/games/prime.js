@@ -24,7 +24,7 @@ const generateRound = () => {
   const number = getRandomNumber(minRange, maxRange);
   const question = String(number);
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
-  console.log(correctAnswer);
+
   return [question, correctAnswer];
 };
 

@@ -5,8 +5,6 @@ const description = 'Find the greatest common divisor of given numbers.';
 const minRange = 1;
 const maxRange = 100;
 
-const a = number1;
-const b = number2;
 const gcd = (a, b) => (b !== 0 ? gcd(b, a % b) : a);
 
 const generateRound = () => {

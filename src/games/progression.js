@@ -5,14 +5,14 @@ const minStep = 2;
 const maxStep = 10;
 const minFirst = 1;
 const maxFirst = 50;
-const lengthLimit = 10;
+// const lengthLimit = 10;
 
 const description = 'What number is missing in the progression?';
 
-const makeProgression = (firstNum, step) => {
+const makeProgression = (firstNum, step, length = 10) => {
   const progression = [];
 
-  for (let i = 1; i !== lengthLimit; i += 1) {
+  for (let i = 1; i !== length; i += 1) {
     progression.push(firstNum + (step * i));
   }
   return progression;

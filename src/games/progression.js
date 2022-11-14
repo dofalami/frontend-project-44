@@ -8,11 +8,11 @@ const maxFirst = 50;
 
 const description = 'What number is missing in the progression?';
 
-const makeProgression = (first, step, length = 10) => {
+const makeProgression = (first, step, length) => {
   const progression = [];
 
-  for (let i = 1; i !== length; i += 1) {
-    progression.push(first + (step * i));
+  for (let i = 0; i !== length; i += 1) {
+    progression.push(first + step * i);
   }
   return progression;
 };
@@ -20,7 +20,8 @@ const makeProgression = (first, step, length = 10) => {
 const generateRound = () => {
   const first = getRandomNumber(minFirst, maxFirst);
   const step = getRandomNumber(minStep, maxStep);
-  const progression = makeProgression(first, step);
+  const length = 10;
+  const progression = makeProgression(first, step, length);
   const hiddenIndex = getRandomIndex(progression);
   const correctAnswer = String(progression.splice(hiddenIndex, 1, '..'));
   const question = progression.join(' ');
